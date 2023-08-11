@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="RPS.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap " rel="stylesheet ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Rock Paper Scissor</title>
+
+</head>
+<body>
+  <h3 class="title">Rock Paper Scissor</h3>
+
+  <button class="moves-btn js-rock-btn">
+
+    <a target="_blank " href="#" aria-label="source code " class="moves-icon">
+    <i class="fa-regular fa-hand-back-fist"></i>
+
+  </a></button>
+
+  <button class="moves-btn js-paper-btn">
+
+    <a target="_blank " href="#" aria-label="source code " class="moves-icon ">
+    <i class="fa-regular fa-hand"></i>
+    </a>
+  </button>
+
+  <button class="moves-btn js-scissor-btn">
+
+    <a target="_blank " href="#" aria-label="source code " class="moves-icon ">
+    <i class="fa-regular fa-hand-scissors fa-rotate-90"></i>
+    
+  </a></button>
+
+  <p class="js-results results"></p>
+  <p class="js-moves moves"></p>
+  <p class="js-scores scores"></p>
+
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.tie = 0;
+  localStorage.removeItem('score')
+  updateScoreElem();
+  " class="reset-btn ">Reset Score</button>
+
+  <button onclick="
+  autoPlay();
+  " class="autoplay-btn">Auto Play</button>
+
+  <script src="RPS.js"></script>
+</body>
+</html>

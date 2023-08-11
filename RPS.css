@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.moves-icon i {
+  font-size: 5rem;
+  color: #6495ed;
+}
+
+.moves-btn {
+  border: 3px solid white;
+  width: 180px;
+  height: 180px;
+  border-radius: 60px;
+  margin: 0 3.5rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.results {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.reset-btn,
+.autoplay-btn {
+  background-color: #6495ed;
+  border: none;
+  margin-top: 2rem;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.autoplay-btn {
+  margin-left: 1.5rem;
+}
+
+.moves-btn:hover {
+  transform: scale(1.1);
+}
+
+.moves-icon i:hover {
+  color: #2d6ada;
+}
+
+.reset-btn:hover,
+.autoplay-btn:hover {
+  background-color: #2d6ada;
+  transform: scale(1.1);
+}
